@@ -165,7 +165,8 @@ LR3 <- MLE.Gamma.data$value/MLE.LogNorm.data$value   #Calculates the Likelihood 
     \texttt{Solution:} The best fit distribution for Fall is a Lognormal distribution.
     \item Plot the four distributions in one plot using \texttt{cyan3} for Winter,
     \texttt{chartreuse3} for Spring, \texttt{red3} for Summer, and \texttt{chocolate3}
-    for Fall. Note any similarities/differences you observe across the seasons.
+    for Fall. Note any similarities/differences you observe across the seasons. \\
+    \texttt{Solution:} For the most part all the distributions seem to be relatively similar to eachother, with some being a little more right skewed and platykurtic than the others. The fall distribution differs a little more than all the others (is more platykurtic).
   \end{enumerate}
 \end{enumerate}
 

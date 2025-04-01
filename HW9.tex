@@ -219,7 +219,8 @@ which \texttt{R} cannot differentiate from 0.
     \texttt{Solution:} The best fit distribution for Fall is a Lognormal distribution.
     \item Plot the four distributions in one plot using \texttt{cyan3} for Winter,
     \texttt{chartreuse3} for Spring, \texttt{red3} for Summer, and \texttt{chocolate3}
-    for Fall. Note any similarities/differences you observe across the seasons.
+    for Fall. Note any similarities/differences you observe across the seasons. \\
+    \texttt{Solution:} For the most part all the distributions seem to be relatively similar to eachother, with some being a little more right skewed and platykurtic than the others. The fall distribution differs a little more than all the others (is more platykurtic).
   \end{enumerate}
 \end{enumerate}
 
@@ -289,7 +290,7 @@ which \texttt{R} cannot differentiate from 0.
   \hlkwd{mutate}\hldef{(}\hlkwc{pdf} \hldef{=} \hlkwd{dlnorm}\hldef{(}\hlkwc{x} \hldef{= x,} \hlkwc{meanlog} \hldef{=} \hlnum{1.130}\hldef{,} \hlkwc{sdlog} \hldef{=} \hlnum{0.619}\hldef{))}     \hlcom{#Fall data distribution}
 
 \hlkwd{ggplot}\hldef{()} \hlopt{+}
-  \hlkwd{geom_line}\hldef{(}\hlkwc{data} \hldef{= winter.plot.data,} \hlkwd{aes}\hldef{(}\hlkwc{x} \hldef{= x,} \hlkwc{y} \hldef{= pdf),} \hlkwc{color} \hldef{=} \hlsng{"cyan3"}\hldef{)} \hlopt{+} \hlcom{#draws winter distribution}
+  \hlkwd{geom_line}\hldef{(}\hlkwc{data} \hldef{= winter.plot.data,} \hlkwd{aes}\hldef{(}\hlkwc{x} \hldef{= x,} \hlkwc{y} \hldef{= pdf),} \hlkwc{color} \hldef{=} \hlsng{"cyan3"}\hldef{)} \hlopt{+} \hlcom{#draws winter distribution curve}
   \hlkwd{geom_line}\hldef{(}\hlkwc{data} \hldef{= spring.plot.data,} \hlkwd{aes}\hldef{(}\hlkwc{x} \hldef{= x,} \hlkwc{y} \hldef{= pdf),} \hlkwc{color} \hldef{=} \hlsng{"chartreuse3"}\hldef{)} \hlopt{+} \hlcom{#draws spring distribution curve}
   \hlkwd{geom_line}\hldef{(}\hlkwc{data} \hldef{= summer.plot.data,} \hlkwd{aes}\hldef{(}\hlkwc{x} \hldef{= x,} \hlkwc{y} \hldef{= pdf),} \hlkwc{color} \hldef{=} \hlsng{"red3"}\hldef{)} \hlopt{+} \hlcom{#draws summer distribution curve}
   \hlkwd{geom_line}\hldef{(}\hlkwc{data} \hldef{= fall.plot.data,} \hlkwd{aes}\hldef{(}\hlkwc{x} \hldef{= x,} \hlkwc{y} \hldef{= pdf),} \hlkwc{color} \hldef{=} \hlsng{"chocolate3"}\hldef{)} \hlcom{#draws fall distribution curve}
